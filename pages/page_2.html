@@ -1,0 +1,213 @@
+<style type="text/css">
+  body{
+  font-family: Garamond;
+}
+.detail {
+        border-right: 1px solid #444;
+        text-align: justify;
+      }
+      .detail> p  {
+        line-height: 30px;
+      }
+      hr.type{
+        border: 0;
+        height: 55px;
+        background-image: url('image/flower.png');
+        background-repeat: no-repeat;
+      }
+      .icon {
+        margin: auto;
+      }
+      .icon > a {
+        color: black;
+      }
+      .icon > a:hover {
+        color: blue;
+      }
+      .table {
+        font-size: 20px;
+      }
+      .table tr td a {
+        color: black;
+        text-decoration: none;
+        margin: auto;
+      }
+      .table tr td a:hover {
+        color: blue;
+      }
+      .view ul {
+        padding: 0;
+        list-style-type: none;
+        display: table;
+        margin: 0 auto;
+      }
+      .view li {
+        font-size: 20px;
+        width: 8em;
+        height: 2em;
+        text-align: center;
+        line-height: 2em;
+        font-family: -apple-system;
+        position: relative;
+        transition: 0.5s;
+      }
+      .view li::before,
+      .view li::after {
+        content: '';
+        position: absolute;
+        width: 0.6em;
+        height: 0.6em;
+        background-color: #92278F;
+        border-radius: 50%;
+        transition: 0.5s cubic-bezier(0.5, -0.5, 0.25, 1.5);
+        top: calc(50% - 0.6em / 2);
+      }
+      .view li::before {
+        left: 0;
+        z-index: -1;
+      }
+      .view li::after {
+        right: 0; 
+        z-index: -2;
+      }
+      .view li:hover::before,
+      .view li:hover::after {
+        width: 100%;
+        height: 100%;
+        border-radius: 0;
+        background-color: #B6B1D9;
+      }
+      .view li:hover::before {
+        top: 0;
+      }
+      .view li:hover::after {
+        right: -0.4em;
+        filter: brightness(0.8);
+      }   
+      .view li a {
+        color: black;
+        text-decoration: none;
+      }
+      .view li a:hover {
+        color: white;
+        text-transform: uppercase;
+      }
+</style>
+<!-- Topic name -->
+  <h1 class="text-center mt-5" style="font-size: 50px; font-family: 'Cormorant Garamond', serif;">
+    <i class="fas fa-code"></i> HTML & CSS
+  </h1>
+
+<!-- Duration & Level -->
+  <h3 class="text-center my-4">1h 30m  <b>.</b>  Beginner</h3>
+
+<!-- Course details & Learning objectives box -->
+  <div class="container my-5">
+    <div class="row">
+      <div class="col-sm-6 detail py-2 px-5">
+        <h3 class="text-center">Course details</h3> <hr class="type">
+        <p>Forms are a major component of modern websites, used to collect user data, conduct polls, and more. While you can use a form builder, they're relatively simple to build from scratch with basic web technologies: HTML and CSS. In this course, <b>Clarissa Peterson</b> demonstrates best practices for creating and styling web forms that are easy to complete and acessible to all users and deviecs. Learn proper use of form fields, including the new HTML5 input types, and discover how to add interactivity such as form validation, style forms with CSS, create responsive layouts, add interactivity such as form validation, and design forms for usability and accessibility.</p>
+      </div>
+      <div class="col-sm-6 objective py-2 px-5">
+        <h3 class="text-center">Learning objectives</h3> <hr class="type">
+        <ul>
+          <li><p>How users interact with forms</p></li>
+          <li><p>Designing forms that are easy to use</p></li>
+          <li><p>Following data privacy laws when collecting information</p></li>
+          <li><p>Choosing with HTML input types to use</p></li>
+          <li><p>Adding buttons</p></li>
+          <li><p>Styling form fields with CSS</p></li>
+          <li><p>Using positioning and flexbox to create responsive form layouts</p></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+<!-- Video preview -->
+  <div class="container">
+    <div class="row mb-5">
+      <div class="col-sm-2 icon" style="font-size: 35px; text-align: center;"><a href="#" class="disabled"><i class="fas fa-angle-double-left"></i></a></div>
+      <div class="col-sm-8">
+        <h1 class="text-center" style="font-family: Garamond;"><b><i>HTML & CSS: Creating Forms</i></b></h1>
+        <h2 class="text-center mt-4"  style="font-size: 40px;">Welcome</h2>
+      </div>
+      <div class="col-sm-2 icon"  style="font-size: 35px; text-align: center;"><a href="#" class="disabled"><i class="fas fa-angle-double-right"></i></a></div>
+    </div>
+    <div class="row">
+      <div class="col-sm-12">
+        <video controls style="width: 100%; height: auto;">
+          <source src="image/HTML & CSS welcome.mp4" type="video/mp4">
+        </video>
+      </div>
+    </div>
+  </div>
+
+<!-- Course contents -->
+  <div class="container my-5">
+    <div class="row">
+      <div class="col-sm-12">
+        <h1 class="text-center" style="font-family: Garamond;"><b>Contents</b></h1>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-2"></div>
+      <div class="col-sm-8 mt-5">
+        <table class="table text-center table-bordered table-striped shadow-lg">
+          <thead>
+            <tr>
+              <th scope="col">#</th>
+              <th scope="col">Chapter</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">0</th>
+              <td><a href="#">Introduction</a></td>
+            </tr>
+            <tr>
+              <th scope="row">1</th>
+              <td><a href="#">Designing a Form Experience</a></td>
+            </tr>
+            <tr>
+              <th scope="row">2</th>
+              <td><a href="#">Creating Forms with HTML</a></td>
+            </tr>
+            <tr>
+              <th scope="row">3</th>
+              <td><a href="#">Making Forms Interactive</a></td>
+            </tr>
+            <tr>
+              <th scope="row">4</th>
+              <td><a href="#">Styling Form Fields with CSS</a></td>
+            </tr>
+            <tr>
+              <th scope="row">5</th>
+              <td><a href="#">Form Layout with CSS</a></td>
+            </tr>
+            <tr>
+              <th scope="row">6</th>
+              <td><a href="#">Conclusion</a></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="col-sm-2"></div>
+    </div>
+  </div>
+
+<!-- Course schedule button -->
+  <div class="container my-5">
+    <div class="row">
+      <div class="col-sm-12">
+        <p class="text-center" style="font-size: 25px;">To view the course schedule, click the <b>more</b>  button</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-12 view">
+        <ul>
+          <li><a href="#page10" class="text-center">More</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+

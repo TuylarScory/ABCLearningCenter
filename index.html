@@ -1,0 +1,185 @@
+ <!DOCTYPE html>
+<html>
+<head>
+  <title>ABC Learning Center</title>
+
+  <meta name="keyword" content="HTML, CSS, Python, PHP, course">
+
+<!-- Bootstrap link -->
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+
+  <!-- jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+  <!-- Popper JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+  <!-- Latest compiled JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+  <!-- Google Font link -->
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,700&family=EB+Garamond:wght@600&family=Girassol&family=Playfair+Display&family=Racing+Sans+One&family=Source+Code+Pro:wght@200&display=swap" rel="stylesheet">
+
+  <!-- Font awesome Icon link-->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+
+  <!-- Cloud flare Icon Link -->
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.3.2/css/simple-line-icons.min.css">
+
+  <!-- CSS link  -->
+  <link rel="stylesheet" type="text/css" href="css/main.css">
+
+  <link rel="stylesheet" type="text/css" href="css/home.css">
+
+  <link rel="stylesheet" type="text/css" href="css/registe.css">
+  
+  <!-- JavaScript link -->
+  <script type="text/javascript" src="script.js"></script>
+
+</head>
+<body>
+
+<!-- Header -->
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-sm-12 my-1">
+        <img src="image/Logo.jpg" alt="Brand Name" class="img-fluid mx-auto d-block logo">
+      </div>
+    </div>
+  </div>
+
+<!-- Top Navigation -->
+  <nav class="menu sticky-top" role="navigation" aria-label="menu">
+   <button class="menu__btn">
+      <span class="menu__btn__bar"></span>
+      <span class="menu__btn__bar"></span>
+      <span class="menu__btn__bar"></span>
+   </button>
+
+   <ul class="menu__ul">
+      <li><p class="text"><a href="#page1">ABC</a></p></li>
+      <li><a href="#page1">Home</a></li>
+      <li class="dropdown">
+        <a href="#">Course</a>
+          <ul class="subdropdown">
+            <li><a href="#page2">HTML & CSS</a></li>
+            <li><a href="#page3">Python</a></li>
+            <li><a href="#">PHP</a></li>
+          </ul>
+      </li>
+      <li><a href="#page4">Register</a></li>
+      <li><a href="#" class="disabled">Sign in</a></li>
+      <form id="form">
+        <input type="text" placeholder="Search..." name="search">
+        <button type="submit"><i class="fas fa-search"></i></button>
+      </form>
+   </ul>
+  </nav>
+
+  <!-- <div class="clear"></div> -->
+
+  <div id="pageContent">
+    <!-- Banner Image -->
+  <img src="image/goal.jpg" width="100%" style="margin-top: -16px;">
+
+<!-- Banner Text -->
+  <div id="banner" style="font-family: 'Cormorant Garamond', serif;">
+    <h2>To Get More Knowledge and Better Experience, Please Learn with Us</h2> 
+    <button class="banner_btn">Learn More</button>
+  </div>
+
+<!-- Course -->
+  <div class="container-fluid my-5" style="font-family: Garamond;">
+    <div class="row">
+      <div class="col-sm-4">
+        <div class="card card-block ">
+          <h4 class="card-title text-right mt-2 mr-2"><i class="fas fa-bell"></i></h4>
+          <img src="image/html.jpg" alt="" width="100%">
+          <h3 class="text-center mt-4"><b>HTML & CSS</b></h3>
+          <p class="text-center" style="font-size: 20px;">2h  30m <b style="font-size: 35px;">.</b> Beginner</p>
+          <button class="btn mt-3 mb-4 mr-4" onclick="window.location.href = '#page2';"><i class="fas fa-angle-double-right"></i></button>  
+          <h3><span class="badge badge-warning ml-3">Free</span></h3>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="card card-block">
+          <h4 class="card-title text-right mt-2 mr-2"><i class="fas fa-bell"></i></h4>
+          <img src="image/python.jpg" alt="" width="100%">
+          <h3 class="text-center mt-4"><b>Python</b></h3>
+          <p class="text-center" style="font-size: 20px;">4hr 45m <b style="font-size: 35px;">.</b> Beginner + Intermediate</p>
+          <button class="btn mt-3 mb-4 mr-4" onclick="window.location.href = '#page3';"><i class="fas fa-angle-double-right"></i></button>
+          <h3><span class="badge badge-warning ml-3">Free</span></h3>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="card card-block">
+          <h4 class="card-title text-right mr-2"><i class="fas fa-bell"></i></h4>
+          <img src="image/php.jpg" alt="" width="100%">
+          <h3 class="text-center mt-4"><b>PHP</b></h3>
+          <p class="text-center" style="font-size: 20px;">5h  51m <b style="font-size: 35px;">.</b> Beginner</p>
+          <button class="btn mt-3 mb-4 mr-4" onclick="window.location.href = '#';"><i class="fas fa-angle-double-right"></i></button>
+          <h3><span class="badge badge-warning ml-3">Free</span></h3>
+        </div>
+      </div>
+    </div>  
+  </div>
+  </div>
+
+  <!-- <div class="clear"></div> -->
+
+<!-- Footer -->
+  <footer>
+    <div class="container-fluid" style="background: teal;">
+      <div class="row">
+        <div class="col-sm-6 py-5 contact">
+          <h4><li class="list py-2"><a href="#page5">Contact Us</a></li></h4>
+          <h4><li class="list py-2"><a href="#page6">About Us</a></li></h4>
+          <h4><li class="list py-2"><a href="#page7">Privacy Policy</a></li></h4>
+          <h4><li class="list py-2"><a href="#page8">Sitemap</a></li></h4>
+        </div>
+        <div class="col-sm-6">
+          <div class="row">
+            <div class="col-sm-12 follow">
+              <h4 class="mt-2">FOLLOW US</h4>
+              <a href="https://www.facebook.com"><i class="fab fa-facebook"></i></a>
+              <a href="https://www.instagram.com"><i class="fab fa-instagram"></i></a>
+              <a href="https://plus.google.com"><i class="fab fa-google-plus"></i></a>
+              <a href="https://www.linkedin.com"><i class="fab fa-linkedin"></i></a>
+              <a href="https://twitter.com"><i class="fab fa-twitter-square"></i></a>
+            </div>
+          </div>
+        
+          <div class="row">
+            <div class="col-sm-12 follow">
+              <h4 class="mt-2">RESOURCES</h4>
+                <img src="image/linkedin_learning.jpg" class="img-fluid mx-auto d-block logo" width="18%" >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+  <script type="text/javascript">
+  // .........................Hambuger menu......................
+    (() => {
+      let $ = la => document.querySelector(la);
+  
+      $(".menu__btn").addEventListener("click", function(){
+        this.classList.toggle("menu__btn--active")
+        $(".menu__ul").classList.toggle("menu__ul--active")
+      });
+    })()
+
+  // ......................Course dropdown show when the mouse hover..................
+    $('.dropdown').hover(function(){
+      $('.subdropdown').show()
+    });
+
+  // ....................Course dropdown hide when the mouse leave.......................
+    $('.dropdown').mouseleave(function(){
+      $('.subdropdown').hide()
+    });
+  </script>
+</html>

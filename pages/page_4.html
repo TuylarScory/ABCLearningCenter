@@ -1,0 +1,255 @@
+<!-- Register form -->
+  <div class="cover">
+    <div class="main"> 
+      <form class="validate-form" name="myform">
+        <span class="label-input-title" style="font-size: 50px; font-family: 'Cormorant Garamond', serif;">
+          Please Fill Your Information!
+        </span>
+<br>
+      <!-- .......................First name box .......................... -->
+        <div class="validate-input">
+          <span class="label-input">First Name</span>
+          <input type="text" class="info-input" name="fname" id="fname" placeholder="Type your firstname" onblur="tabvalidation('fname','error')" required title="Please enter your first name">
+          <span class="focus-input"></span>
+        </div> 
+<br>
+<!-- .......................Error for first name .......................... -->
+  <label id="error" style="color:red"></label> 
+<br>
+      <!-- .......................Last name box .......................... -->
+        <div class="validate-input">
+          <span class="label-input">Last Name</span>
+          <input type="text" class="info-input" name="lname" id="lname" placeholder="Type your lastname" onblur="tabvalidation('lname','error1')" required title="Please enter your last name">
+          <span class="focus-input"></span>
+        </div>
+<br>
+<!-- .......................Error 1 for last name .......................... -->
+  <label id="error1" style="color:red"></label> 
+<br>
+      <!-- .......................Email box .......................... -->
+        <div class="validate-input">
+          <span class="label-input">Email</span>
+          <input type="email" class="info-input" name="email" id="email" placeholder="Type your email"  onblur="emailvalidation()" required title="Please enter your email address">
+          <span class="focus-input"></span>
+        </div>
+<br>
+<!-- .......................Error 2 for last name .......................... -->
+  <label id="error2" style="color:red;"></label>
+<br>
+      <!-- .......................Phone or contact box .......................... -->
+        <div class="validate-input">
+          <span class="label-input">Phone</span>
+          <input type="number" class="info-input" name="phone" id="phone" placeholder="Type your phone" onblur="tabvalidation('phone','error3')" value="" required title="Please enter your phone number">
+          <span class="focus-input"></span>
+        </div>
+<br>
+<!-- .......................Error 3 for phone .......................... -->
+  <label id="error3" style="color:red"></label> 
+<br>      
+      <!-- .......................Address box ......................... -->    
+        <div class="validate-input">
+          <span class="label-input">Address</span>
+          <textarea class="info-input" name="address" id="address" placeholder="Type your address" onblur="tabvalidation('address','error4')" required title="Please type your address"></textarea>
+          <span class="focus-input"></span>
+        </div>
+<br>
+<!-- .......................Error 4 for address.......................... -->
+  <label id="error4" style="color:red"></label> 
+<br>
+      <!-- .......................Postal/Zip code box .......................... -->
+        <div class="validate-input">
+          <span class="label-input">Postal/Zip Code</span>
+          <input type="number" class="info-input" name="zip" id="zip" placeholder="Type your zip code" onblur="tabvalidation('zip','error5')" required title="Please enter your zip/postal code">
+          <span class="focus-input"></span>
+        </div>
+<br>
+<!-- .......................Error 5 for zip code .......................... -->
+  <label id="error5" style="color:red"></label> 
+<br>
+      <!-- .......................Country box .......................... -->
+        <div class="validate-input">
+          <span class="label-input">Country</span>
+          <input type="text" class="info-input" name="country" id="country" placeholder="Type your country" onblur="tabvalidation('country','error6')" required title="Please enter your country">
+          <span class="focus-input"></span>
+        </div>
+<br>
+<!-- .......................Error 6 for country .......................... -->
+  <label id="error6" style="color:red"></label> 
+<br>
+      <!-- .......................Password box .......................... -->
+        <div class="validate-input">
+          <span class="label-input">Password</span>
+          <input type="password" class="info-input" name="password" id="password" placeholder="Type your password" onblur="tabvalidation('password','error8')" required pattern="(?=^.{8,}$)((?=.*\d)(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$" title="Must contain 8 to 20 character which contain at least one numeric digit, one upper case, and one lower letter">
+          <span class="focus-input"></span>
+        </div>
+<br>
+<!-- .......................Error 8 for password .......................... -->
+  <label id="error8" style="color:red"></label> 
+<br>
+      <!-- .......................Confirm password box .......................... -->
+        <div class="validate-input">
+          <span class="label-input">Confirm Password</span>
+          <input type="password" class="info-input" name="conpassword" id="conpassword" placeholder="Type your confirm password" onblur="tabvalidation('conpassword','error9')" pattern="(?=^.{8,}$)((?=.*\d)(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$" required title="Must contain 8 to 20 character which contain at least one numeric digit, one upper case, and one lower letter">
+          <span class="focus-input"></span>
+        </div>
+<br>
+<!-- .......................Error 9 for confirm password.......................... -->
+  <label id="error9" style="color:red"></label> 
+<br>
+      <!-- .......................Register button .......................... -->
+        <div class="register-form-btn">
+          <div class="form-bg-btn"></div>
+          <button type="submit" value="submit" id="submit" class="form-btn">
+            Register
+          </button>
+        </div>
+<br>
+      <!-- .......................Reset box.......................... -->
+        <div class="register-form-btn">
+          <div class="reset-bg-btn"></div>
+          <input type="hidden" name="submitted" value="1">
+          <button type="reset" value="reset" class="form-btn" onclick="myFunction()">
+            Reset
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+ <script type="text/javascript">
+  // ............Hambuger menu...................
+    //     (() => {
+    //   let $ = la => document.querySelector(la);
+  
+    //   $(".menu__btn").addEventListener("click", function(){
+    //     this.classList.toggle("menu__btn--active")
+    //     $(".menu__ul").classList.toggle("menu__ul--active")
+    //   });
+    // })()
+
+  // ....................using tab key validation................
+    function tabvalidation(fid,seid) {
+      var x=document.getElementById(fid).value;
+      if(x==""){
+        document.getElementById(seid).innerHTML=" Please fill out this field!";
+      }else{
+        document.getElementById(seid).innerHTML="";
+      }
+    }
+
+  // ..................phone number validation within 11 digits........................
+    $(document).ready(function() {
+      $("#phone").keypress(function(e) {
+        var length = this.value.length;
+        if (length >= 11) {
+           e.preventDefault();
+          document.getElementById('error3').innerHTML="Phone number must be only 11 digits!";
+        }
+      });
+
+    // ......................zip code validation within 5 digits.........................
+      $("#zip").keypress(function(e){
+        var length = this.value.length;
+        if (length >= 6) {
+          e.preventDefault();
+          document.getElementById('error5').innerHTML="Zip code must be only 6 place!"
+        }
+      });
+
+    // ......................first name validation (only character)...................
+      $('#fname').keypress(function (e) {
+        var regex = /^[a-zA-Z ]+$/;
+        var str = String.fromCharCode(!e.charCode ? e.which : e.charCode);
+        if (regex.test(str)) {
+          return true;
+        }
+        else
+        {
+          e.preventDefault();
+          document.getElementById('error').innerHTML="First name must be only character";
+          return false;
+        }
+      });
+
+    // .................last name vaidaiton (only character)......................
+      $('#lname').keypress(function (e) {
+        var regex = /^[a-zA-Z ]+$/;
+        var str = String.fromCharCode(!e.charCode ? e.which : e.charCode);
+        if (regex.test(str)) {
+          return true;
+        }
+        else
+        {
+          e.preventDefault();
+          document.getElementById('error1').innerHTML="Last name must be only character";
+          return false;
+        }
+      });
+
+      $("#submit").click(function(){
+        var fname=$('#fname').val();
+        var lname=$('#lname').val();
+        var email=$('#email').val();
+        var phone=$('#phone').val();
+        var address=$('#address').val();
+        var zip=$('#zip').val();
+        var country=$('#country').val();
+        var password=$('#password').val();
+        var conpassword=$('#conpassword').val();
+
+        var dataString = 'fname1=' + fname + '&lname1=' + lname + '&email1=' + email + '&phone1=' + phone + '&address1=' + address + '&zip1=' + zip + '&country1=' + country +'&password1=' + password + '&conpassword1=' + conpassword;
+
+        if($('#password').val() != $('#conpassword').val()) 
+        {
+          alert("Password does not match");
+        }
+        else if(fname=='' || lname=='' || email=='' || phone=='' || address=='' || zip=='' || country=='' || password=='' || conpassword=='')
+        { 
+
+        } 
+
+        else
+        {
+          $.ajax(
+          {
+            type:"POST",
+            url:"action.php",
+            data:dataString,
+            cache:false,
+            success: function (result) {
+
+            }
+          });
+          window.location.replace('#page11');
+        }
+        return false;
+      });
+    });
+
+  // ..................email validation (include @, ., .com sign)....................
+    function emailvalidation(email) 
+    {
+      if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(myform.email.value))
+      {
+        return (true)
+      }
+        document.getElementById("error2").innerHTML="Invalid email format";
+        return (false)
+    }
+
+  // ......................reload the page by using reset button.........................
+    function myFunction() {
+          location.reload();
+      };
+
+  // ......................Course dropdown show when the mouse hover..................
+    $('.dropdown').hover(function(){
+      $('.subdropdown').show()
+    });
+
+  // // ....................Course dropdown hide when the mouse leave.......................
+    $('.dropdown').mouseleave(function(){
+      $('.subdropdown').hide()
+    });
+
+    </script>

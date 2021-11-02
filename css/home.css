@@ -1,0 +1,63 @@
+.card {
+        transition: 0.5s;
+        cursor: pointer;
+      }
+      .card-title {
+        font-size: 15px;
+        transition: 1s;
+        cursor: pointer;
+      }
+      .card-title i{
+        font-size: 20px;
+        transition: 1s;
+        cursor: pointer;
+        color: #ffa710;
+      }
+      .card-title i:hover {
+        color: #18d4ca;
+        transform: skew(20deg);
+        animation: shake 3s infinite;
+        animation-direction: alternate;
+      }
+      @-webkit-keyframes shake {
+        0% {
+          transform: skewY(20deg);
+        }
+        100% {
+          transform: skewY(-20deg);
+        }
+      }
+      .card:hover {
+        transform: scale(1.05);
+        box-shadow: 10px 10px 15px rgba(0,0,0,0.3);
+      }
+      .card::before, .card::after {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        transform: scale3d(0,0,1);
+        transition: transform .3s ease-out 0s;
+        background: rgba(255,255,255,0.1);
+        content: '';
+        pointer-events: none;
+      }
+      .card::before {
+        transform-origin: left top;
+      }
+      .card::after {
+        transform-origin: right bottom;
+      }
+      .card:hover::before, .card:hover::after, .card:focus::before, .card:focus::after {
+        transform: scale3d(1,1,1);
+      }
+      .card .btn {
+        width: 15%;
+        margin: auto;
+        background: salmon;
+      }
+      .card .btn:hover {
+        background: mediumpurple;
+        color: white;
+      }
