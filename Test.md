@@ -11,6 +11,5 @@ I love :coffee: :pizza:, and :dancer:.
 |------------|-------------|
 | image 1 | image 2 |
 
-<img src="https://media.wired.com/photos/5926db217034dc5f91becd6b/master/w_582,c_limit/so-logo-s.jpg" width="250">
+![KP](https://user-images.githubusercontent.com/58412924/141487747-354dc23d-946d-45d6-b5a0-6dbafd5d0a40.jpg)
 
-![image](https://user-images.githubusercontent.com/58412924/141472643-8268a61a-7370-4132-aa3d-94a0768b82c9.png)
